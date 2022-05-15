@@ -19,7 +19,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: rgb(71, 71, 71);
+    background-color: antiquewhite;
 }
 .slider-wrapper {
     margin: 0 auto;
@@ -86,8 +86,8 @@ body input {
 #switch2:checked ~ footer .controls .b2,
 #switch3:checked ~ footer .controls .b3,
 #switch4:checked ~ footer .controls .b4 {
-    background-color: black;
-    border: 4px solid black;
+    background-color: blue;
+    border: 4px solid blue;
     transition: all 0.8s ease;
 }
 
@@ -190,7 +190,7 @@ footer {
 
 .text {
     font-size: 25px;
-    color: white;
+    color: black;
     height: 25%;
     display: flex;    
 }
