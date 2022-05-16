@@ -1,1 +1,1 @@
-# cssMemSlider
+# https://fox0810.github.io/cssMemSlider/cssMemSlider/index.html
