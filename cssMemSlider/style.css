@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: blanchedalmond;
+}
+.slider-wrapper {
+    margin: 0 auto;
+    width: 400%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 769px) {
+    .slider-wrapper {       
+        height: 62%;        
+    }
+}
+
+@media (max-width: 600px) {
+    .slider-wrapper {       
+        height: 31%;        
+    }
+}
+
+.slide {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s ease;
+}
+
+img {    
+    width: 72.5rem;
+    margin-left: auto ;
+    margin-right: auto;
+}
+
+@media (max-width: 1279px) {
+    img {
+        width: 36.75rem;        
+    }
+}
+
+@media (max-width: 769px) {
+    img {
+        width: 31.25rem;
+        height: 25rem;        
+    }
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 18.75rem;
+        height: 10.6875rem;        
+    }
+}
+
+body input {
+    visibility: hidden;
+}
+
+.image-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+#switch1:checked ~ footer .controls .f1,
+#switch2:checked ~ footer .controls .f2,
+#switch3:checked ~ footer .controls .f3,
+#switch4:checked ~ footer .controls .f4 {
+    background-color: blue;
+    border: 0.25rem solid blue;
+    transition: all 0.8s ease;
+}
+
+#switch1:checked ~ footer .controls .f1:hover,
+#switch2:checked ~ footer .controls .f2:hover,
+#switch3:checked ~ footer .controls .f3:hover,
+#switch4:checked ~ footer .controls .f4:hover {
+    background-color: white;
+    transition: all 0.8s ease;
+}
+
+#switch1:checked ~ .slider-wrapper .image-wrapper .s1 {
+    margin-left: 0;
+ }
+ 
+ #switch2:checked ~ .slider-wrapper .image-wrapper .s1 {
+    margin-left: -25%;
+ }
+ 
+ #switch3:checked ~ .slider-wrapper .image-wrapper .s1 {
+    margin-left: -50%;
+ }
+ 
+ #switch4:checked ~ .slider-wrapper .image-wrapper .s1 {
+    margin-left: -75%;
+ }
+ 
+
+footer {
+    display: flex;
+    width: 72.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.25rem;
+}
+
+@media (max-width: 1279px) {
+    footer {
+        width: 36.75rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    footer {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (max-width: 769px) {
+    footer {
+        width: 31.25rem;        
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        width: 18.75rem;       
+    }
+}
+
+.controls {
+    display: flex;
+    margin-left: auto;    
+}
+
+@media (max-width: 1199px) {
+    .controls {
+        margin-left: 0;
+        order: -1;
+    }
+}
+
+.button {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0 0.1875rem;
+    background-color: #cccccc;
+    border: 0.25rem solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0.125rem blue;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.button:hover {
+    background-color: blue;
+    transition: all 0.8s ease;
+}
+
+.text-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: 25%;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .text-wrapper {
+        height: 24%;
+    }
+}
+
+.text-all {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.8s ease;
+}
+
+.text {
+    font-size: 1.5625rem;
+    color: black;
+    height: 25%;
+    display: flex;    
+}
+
+@media (max-width: 1199px) {
+    .text {
+        justify-content: left;        
+    }
+}
+
+@media (max-width: 600px) {
+    .text {
+        font-size: 1.25rem;
+        margin-bottom: 0.3125rem;        
+    }
+}
+
+#switch1:checked ~ footer .text-wrapper .text-all {
+    transform: translateY(0);
+ }
+ 
+ #switch2:checked ~ footer .text-wrapper .text-all {
+    transform: translateY(-1.7937rem);
+ }
+ 
+ #switch3:checked ~ footer .text-wrapper .text-all {
+    transform: translateY(-3.4rem);
+ }
+ 
+ #switch4:checked ~ footer .text-wrapper .text-all {
+    transform: translateY(-5.3812rem);
+ }
